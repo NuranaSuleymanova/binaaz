@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bina.az - En son ev elanlari sayti, Dasinmaz emlak</title>
+    <link
+      href="https://bina.azstatic.com/assets/favicons/favicon-192x192-b40ea6169e17d157d4e6943453ee0f32374348b53abc40010d2ff8c81a2263ec.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header_bar">
+        <div class="header_top">
+          <div class="header_top_left">
+            <span> Dəstək xidməti:</span>
+            <span>(012)599-08-02;</span>
+            <span>(012)505-08-02</span>
+            <div class="language">
+              <a class="lang" href="#">RU</a>
+            </div>
+
+            <a class="icons" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="bookmarks-link" href="#">Seçilmişlər</a>
+            <a class="icons" href="#"><i class="fa-regular fa-user"></i></a>
+            <a class="header-bar-i_login-link" href="#">Giriş</a>
+          </div>
+          <!-- <div class="hearder_mid">
+                <div class="nav_logo">
+                  <div class="nav_bar">
+                    <h1 style="color: white;">BİNA.AZ</h1>
+                </div>
+                 <div class="nav_a">
+                  
+                    <a href="/alqi-satqi" class="sale nav-i">Alqı-satqı</a>
+                    <a href="/kiraye" class="rent nav-i">Kirayə</a>
+                    <a href="/agentlikler" class="agencies nav-i">Agentliklər</a>
+                    <a href="/yasayis-kompleksleri" class="residences nav-i">Yaşayış kompleksləri</a>
+                </div>
+               
+               </div>
+               </div> -->
+
+          <div class="header_mid">
+            <div class="header_mid_nav">
+              <a href="#" class="nav-i logo">BİNA.AZ</a>
+              <a href="#" class="nav-i">Alqı-satqı</a>
+              <a href="#" class="nav-i">Kirayə</a>
+              <a href="#" class="nav-i">Agentliklər</a>
+              <a href="#" class="nav-i">Yaşayış kompleksləri</a>
+              <button class="nav-buttom">+Elan Yerləşdir</button>
+            </div>
+          </div>
+          <div class="header_last">
+            <div class="header_last_nav">
+              <select class="nav_i">
+                <option value="Alış">Alış</option>
+                <option value="Kirayə">Kirayə</option>
+              </select>
+              <select class="nav_i">
+                <option value="Mənzil">Mənzil</option>
+                <option value="Yeni tikili">Yeni tikili</option>
+                <option value="Köhnə tikili">Köhnə tikili</option>
+                <option value="Ev/villa">Ev/villa</option>
+                <option value="Bağ">Bağ</option>
+                <option value="Ofis">Ofis</option>
+                <option value="Qaraj">Qaraj</option>
+                <option value="Torpaq">Torpaq</option>
+                <option value="Obyekt">Obyekt</option>
+              </select>
+              <select id="nav_otaq">
+                <option value="Otaq sayı">Otaq sayı</option>
+                <option value="İstənilən otaq sayı">İstənilən otaq sayı</option>
+                <option value="1otaqli"></option>
+              </select>
+              <input id="nav_in" type="text" placeholder="Qiymət,AZN" />
+              <select class="nav_i">
+                <option value="Bakı">Bakı</option>
+                <option value="İstənilən şəhər">İstənilən şəhər</option>
+                <option value="Ağdam">Ağdam</option>
+                <option value="Ağdaş">Ağdaş</option>
+                <option value="Ağsu">Ağsu</option>
+                <option value="Balakən">Balakən</option>
+                <option value="Bərdə">Bərdə</option>
+                <option value="Xaçmaz">Xaçmaz</option>
+                <option value="Quba">Quba</option>
+                <option value="Xırdalan">Xırdalan</option>
+              </select>
+              <select id="nav_look">
+                <option value="Ətraflı axtarış">Ətraflı axtarış</option>
+              </select>
+              <button id="nav_b" type="submit">Axtar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main_info">
+        <div id="info">
+          <!-- <div class="quick_link"  > -->
+          <div class="main_info_purchase">
+            <input class="nav_main" type="radio" id="purchase" />
+            <label class="nav_main" for="purchase">Alış</label>
+            <input class="nav_main" type="radio" id="rent" />
+            <label class="nav_main" for="rent">Kirayə</label>
+
+            <label id="elan_num" for="">Bugün - 259 yeni elan</label>
+
+            <div class="main_info_list">
+              <ul class="ul_list">
+                <li class="list_header">Yeni tikililər</li>
+                <li class="nav_list">1-otaqlı</li>
+                <li class="nav_list">2-otaqlı</li>
+                <li class="nav_list">3-otaqlı</li>
+                <li class="nav_list">4-otaqlı</li>
+                <li class="nav_list">5 otaq və daha çox</li>
+              </ul>
+
+              <ul class="ul_list">
+                <li class="list_header">Köhnə tikililər</li>
+                <li class="nav_list">1-otaqlı</li>
+                <li class="nav_list">2-otaqlı</li>
+                <li class="nav_list">3-otaqlı</li>
+                <li class="nav_list">4-otaqlı</li>
+                <li class="nav_list">5 otaq və daha çox</li>
+              </ul>
+
+              <ul class="ul_list">
+                <li class="list_header">Yaşayış obyektləri</li>
+                <li class="nav_list">Mənzillər</li>
+                <li class="nav_list">Yeni tikililər</li>
+                <li class="nav_list">Köhnə tikililər</li>
+                <li class="nav_list">Evlər / Villalar</li>
+                <li class="nav_list">Bağlar</li>
+              </ul>
+
+              <ul class="ul_list">
+                <li class="list_header">Ticarət obyektləri</li>
+                <li class="nav_list">Ofislər</li>
+                <li class="nav_list">Qarajlar</li>
+                <li class="nav_list">Torpaq sahələri</li>
+                <li class="nav_list">Obyektlər</li>
+                <li class="nav_list"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="main_aside">
+            <figure>
+              <img
+                src="./assets/css/assets/images/sofa.png"
+                alt="img_sofa"
+                width="40px"
+              />
+            </figure>
+            <p>
+              Günlük kirayə mənzillər <br />
+              <small>273 elan</small>
+            </p>
+          </div>
+
+          <div class="main_aside">
+            <figure>
+              <img
+                src="./assets/images/map-search-eaa7fa70ca2c9e22069eb3eef84951968ba6ca5cfd3377bf836125ec45f70f91.png"
+                alt="img_map"
+                width="30px"
+              />
+            </figure>
+            <p>
+              Xəritə üzrə axtarış
+              <br />
+              <small>70814 elan</small>
+            </p>
+          </div>
+          <div class="main_aside">
+            <figure>
+              <img
+                src="./assets/images/construction-services-bacd16612dfe0ef3b3dce95bfaa3ac1b7f79bfa0cbcc30a5564d7b7ab42a7ea8.png"
+                alt="img_cons"
+                width="30px"
+              />
+            </figure>
+            <p>
+              Tikinti xidmətləri
+              <br />
+              <small>4507 elan</small>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="vip_elanlar">
+        <div id="elan">
+          <a href="#" class="vip">VIP ELANLAR </a>
+          <a href="#" class="daha_cox">Daha çox</a>
+          <div class="slider">
+            <a href="#" class="slider_left"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <a href="#" class="slider_right"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="elanlar">
+        <figure class="img_elan">
+          <img src="./assets/images/elan1jpg.jpg" alt="elan1" />
+          <figcaption>
+            <h3>130 000 AZN</h3>
+            <p>
+              Nizami m. <br />
+              3 otaqlı . 72 m . 6/10 mərtəbə <br />
+              Bakı, dünən 19:30
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan2.jpg" alt="elan2" />
+          <figcaption>
+            <h3>3 200 AZN/ay</h3>
+            <p>
+              Binəqədi r. <br />
+              320 m <br />
+              Bakı, dünən 09:10
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan3.jpg" alt="elan3" />
+          <figcaption>
+            <h3>349 000 AZN</h3>
+            <p>
+              Buzovna q. <br />
+              225 m <br />
+              Bakı,30 yanvar 2023
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan4.jpg" alt="elan4" />
+          <figcaption>
+            <h3>200 000 AZN</h3>
+            <p>
+              Biləcəri q. <br />
+              3 otaqlı . 72 m <br />
+              Bakı,14 fevral 2023
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="elanlar">
+        <figure class="img_elan">
+          <img src="./assets/images/elan5.jpg" alt="elan5" />
+          <figcaption>
+            <h3>130 000 AZN</h3>
+            <p>
+              Nizami m. <br />
+              3 otaqlı . 72 m . 6/10 mərtəbə <br />
+              Bakı, dünən 19:30
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan6.jpg" alt="elan6" />
+          <figcaption>
+            <h3>3 200 AZN/ay</h3>
+            <p>
+              Binəqədi r. <br />
+              320 m <br />
+              Bakı, dünən 09:10
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan7.jpg" alt="elan7" />
+          <figcaption>
+            <h3>349 000 AZN</h3>
+            <p>
+              Buzovna q. <br />
+              225 m <br />
+              Bakı,30 yanvar 2023
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan8.jpg" alt="elan8" />
+          <figcaption>
+            <h3>200 000 AZN</h3>
+            <p>
+              Biləcəri q. <br />
+              3 otaqlı . 72 m <br />
+              Bakı,14 fevral 2023
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <section class="vip_elanlar">
+        <div id="elan">
+          <a href="#" class="vip">SON ELANLAR </a>
+          <a href="#" class="daha_cox">Daha çox</a>
+          <!-- <div class="slider">
+           <a href="#" class="slider_left"><i class="fa-solid fa-chevron-left" ></i></a>
+           <a href="#" class="slider_right"><i class="fa-solid fa-chevron-right"></i></a>
+       </div> -->
+        </div>
+      </section>
+
+      <div class="elanlar">
+        <figure class="img_elan">
+          <img src="./assets/images/elan9.jpg" alt="elan9" />
+          <figcaption>
+            <h3>130 000 AZN</h3>
+            <p>
+              Nizami m. <br />
+              3 otaqlı . 72 m . 6/10 mərtəbə <br />
+              Bakı, dünən 19:30
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan10.jpg" alt="elan10" />
+          <figcaption>
+            <h3>3 200 AZN/ay</h3>
+            <p>
+              Binəqədi r. <br />
+              320 m <br />
+              Bakı, dünən 09:10
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan11.jpg" alt="elan11" />
+          <figcaption>
+            <h3>349 000 AZN</h3>
+            <p>
+              Buzovna q. <br />
+              225 m <br />
+              Bakı,30 yanvar 2023
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="img_elan">
+          <img src="./assets/images/elan12.jpg" alt="elan12" />
+          <figcaption>
+            <h3>200 000 AZN</h3>
+            <p>
+              Biləcəri q. <br />
+              3 otaqlı . 72 m <br />
+              Bakı,14 fevral 2023
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="about">
+        <h3>bina.az - Ən son ev elanlari sayti</h3>
+        <p>
+          Azərbaycanın ən böyük elan bazası olan bina.az saytına daxil olmaqla,
+          daşınmaz əmlak bazarının ən son və ən yeni alqı-satqı və kirayə
+          elanları ilə tanış olmaq olar. Burada alıcı və satıcı üçün çox rahat
+          interfeys və axtarış sistemi işləyir. Səhifədə Bakının rayonlarında
+          satılan mənzillər, evlər/villalar, bağlar, ofislər, qarajlar,
+          torpaqlar, obyektlər barədə geniş məlumat əldə etmək olar.
+          İstifadəçilərin rahatlığı üçün nəzərdə tutulmuş filtrlər vasitəsi ilə
+          siz istənilən axtarış kriteriyalarınızı sayta daxil edərək, ucuz və ya
+          lüks, təmirli və ya "pod mayak", şəhərin mərkəzində və ya kənar
+          ərazilərdə mənzil, ev, ofislərlə tanış ola bilərsiniz. Azərbaycanın
+          daşınmaz emlak kataloqunu bina.az saytinda tapacaqsınız! Ən böyük ev
+          elanlari sayti olan bina.az saytında Siz çox tez bir zamanda və rahat
+          şəkildə istədiyiniz, zövqünüzə uyğun ev, mənzil, obyekt və ya başqa
+          bir əmlakı tapa bilərsiniz. Sadəcə bina.az saytına daxil olun.
+          Yuxarıda yerləşən seçim panelindən lazımlı parametrlərini seçin.
+          Məsələn, yeni və yaxud köhnə tikili, bir, iki, üç və daha çox otaqlı,
+          mənzil və ya həyət evi/villa, kiraye evler və digər. Siz təkcə evləri
+          yox, hətta ofis, obyekt və ya torpaq sahələrini də axtara bilərsiniz.
+          Bundan əlavə, məbləğə görə də seçim edə bilərsiniz.
+        </p>
+        <h4>bina.az saytında elan yerləşdirilməsi</h4>
+        <p>
+          Satılıq əmlakınız var? Siz bina.az saytında elanınızı asanlıqla
+          yerləşdirə bilərsiniz. Bunun üçün əmlakın şəkillərini çəkin. Çalışın
+          şəkillər keyfiyyətli olsun və yaxşı rakursdan çəkilsin. Əmlakın bütün
+          otaqların, hətta mətbəx, hamam, balkonun da şəkillərin olması
+          məsləhətlidır. Əmlakın təsvirini verin. Yerləşməsi, tam ünvanı,
+          mərtəbə, sahəsi, otaq sayı, təmirini və digər məlumatı ətraflı yazın.
+          Əlaqə məlumatınızı daxil edin. Əlaqə məlumatınızı – telefon nömrənizi
+          və email ünvanınızı daxil etdikdə, diqqətli olun! Məlumatı daxil edib,
+          yenidən yoxlayın - əlaqə məlumatı dəyişilmir. Elan saytda dərc
+          olunduqdan sonra Siz əlaqə məlumatınızı düzəliş edə bilmərsiniz!
+        </p>
+
+        <h4>İndi evlərin satışı çox rahat oldu!</h4>
+        <p>
+          Emlak birjasinda en populyar emlak saytlarindan biri olan bina.az
+          sayti sizə daşınmaz əmlak bazarında olan bütün təklflərini sizə təqdim
+          edəcək. bina.az saytında pulsuz elan yerləşdirmək çox asandır! Sayta
+          daxil olub "ELAN YERLƏŞDİRİN" düyməsinə sıxaraq, satmaq istədiyiniz
+          daşınmaz əmlak haqqında əsas məlumatları daxil edirsiz və bir neçə
+          dəqiqədən sonra sizin elanınızı minlərlə istifadəçi görür. 1, 2, 3, 4,
+          5 otaqli yeni tikililer ve kohne tikililer. Mənzillər, Evlər /
+          Villalar, Kiraye evler, Bağlar, Ofislər, Qarajlar, Torpaq, Obyektlər.
+          Abşeron, Nərimanov, Sabunçu, Xətai, Binəqədi, Nəsimi, Suraxanı, Xəzər,
+          Nizami, Qaradağ, Səbail, Yasamal rayonlarında evlərin alqı-satqısı və
+          kirayəsi. Bütün əmlak bazari bina.az-da.
+        </p>
+        <hr>
+      </div>
+
+      <div class="search">
+        <h3>POPULYAR AXTARIŞLAR</h3>
+        <div class="search_line_1">
+            <ul>      
+         <li> <a href="#">yeni ev elanları</a></li>
+        <li>  <a href="#">yeni yasamalda ev elanları</a></li>
+        <li> <a href="#">bakıda ev elanları</a></li>
+        <li><a href="#">kirayə ev elanları</a></li>
+        <li> <a href="#">kirayə ev elanları</a></li>
+        <li> <a href="#">ev elanları kirayə</a></li>
+        
+        </ul>
+        </div>
+        <div class="search_line_1">
+            <ul>      
+         <li> <a href="#">ən son kirayə ev elanları</a></li>
+        <li>  <a href="#">daşınmaz əmlak alqı satqı</a></li>
+        <li> <a href="#">daşınmaz əmlak alqı satqı</a></li>
+        <li><a href="#">daşınmaz əmlak satqısı</a></li>
+        
+        </ul>
+        </div>
+        <div class="search_line_1">
+            <ul>      
+         <li> <a href="#">daşınmaz əmlak alqı satqı</a></li>
+        <li>  <a href="#">Menziller</a></li>
+        <li> <a href="#">ev alqi satqi baki</a></li>
+        <li><a href="#">ev alqisi</a></li>
+        <li><a href="#">kiraye evler</a></li>
+        <li> <a href="#">daşınmaz əmlak alqı satqı</a></li>
+        
+        </ul>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
