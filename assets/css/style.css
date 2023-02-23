@@ -17,6 +17,11 @@
  
 }
 
+footer
+{
+    background-color: #dfd9d4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 body
 {
     background-color: #f4f2ef;
@@ -398,13 +403,22 @@ li
    border-bottom-left-radius: 5%;
    border-bottom-right-radius: 5%;
 }
-
+.content
+{
+    background-color: white;
+    margin-bottom: 0px;
+    padding-top: 30px;
+   
+}
 .about
 {
     background-color: white;
     width: 1040px;
     margin-left: 300px;
     padding-left: 5px;
+    padding-top: 10px;
+    height: 550px;
+    
 }
 .search_line_1 li
 {
@@ -427,7 +441,7 @@ li
     padding-left: 3px;
     color: rgb(151, 151, 151);
     width: 100%;
-   align-items: center;
+     align-items: center;
     vertical-align: middle;
 }
 .search_line_1 ul{
@@ -444,9 +458,78 @@ li
     margin-left: 300px;
     background-color: white;
     width: 1050px; 
+    padding-bottom: 10px;
   
 }
 .search h3
 {
     padding-left: 4px;
 }
+
+.content_footer
+{
+    background-color: #dfd9d4;
+}
+
+.footer_contact
+{
+    display: flex;
+    margin-left: 310px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 30px;
+   
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 18px;
+    color:rgb(151, 151, 151); ;
+    
+}
+
+.reklam
+{
+    margin-right: 250px;
+}
+
+.footer_icon
+{
+    /* margin-right: 40px; */
+    margin-left: 20px;
+}
+.mail 
+{
+    /* margin-right: 50px; */
+    margin-left: 40px;
+    margin-top: 2px;
+   
+}
+
+.contact a
+{
+    display: block;
+    margin-left:20px;
+    margin-top: -4px;
+
+   
+}
+
+.contact
+{
+    display: flex;
+    margin-top: -2px;
+}
+ .fa-phone
+ {
+    margin-left: 70px;
+    margin-top: 2px;
+   
+ }
+
+ .fb_insta
+ {
+    margin-left: 40px;
+ }
+
